@@ -9,7 +9,7 @@ How it looks like with animation
 ![list](https://github.com/BusyDeveloper-Bhavin/BasicPresentControllerStyle/blob/master/animate2.gif)
 ![list](https://github.com/BusyDeveloper-Bhavin/BasicPresentControllerStyle/blob/master/animate3.gif)
 
-## With Animation
+## Without Animation
 How it looks like without animation
 
 ![list](https://github.com/BusyDeveloper-Bhavin/BasicPresentControllerStyle/blob/master/wa1.gif)
