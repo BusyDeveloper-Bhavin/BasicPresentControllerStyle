@@ -2,18 +2,20 @@
 A Simple way to present a controller with subviews animation.
 
 
-## With Animation
-How it looks like with animation
+## With Animation & Without Animation
 
+How it looks like with animation and without animation
+
+## Single View
 ![list](https://github.com/BusyDeveloper-Bhavin/BasicPresentControllerStyle/blob/master/animate.GIF)
-![list](https://github.com/BusyDeveloper-Bhavin/BasicPresentControllerStyle/blob/master/animate2.gif)
-![list](https://github.com/BusyDeveloper-Bhavin/BasicPresentControllerStyle/blob/master/animate3.gif)
-
-## Without Animation
-How it looks like without animation
-
 ![list](https://github.com/BusyDeveloper-Bhavin/BasicPresentControllerStyle/blob/master/wa1.gif)
+
+## Mutiple Views
+![list](https://github.com/BusyDeveloper-Bhavin/BasicPresentControllerStyle/blob/master/animate2.gif)
 ![list](https://github.com/BusyDeveloper-Bhavin/BasicPresentControllerStyle/blob/master/wa2.gif)
+
+## Mutiple Views over current viewcontoller
+![list](https://github.com/BusyDeveloper-Bhavin/BasicPresentControllerStyle/blob/master/animate3.gif)
 ![list](https://github.com/BusyDeveloper-Bhavin/BasicPresentControllerStyle/blob/master/wa3.gif)
 
 
