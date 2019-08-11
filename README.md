@@ -33,3 +33,5 @@ How it looks like without animation
               return [centerView] // set your outlets here
             }
         }
+    
+    Note: obj.modalPresentationStyle = .overFullScreen //Use full screen insted of overCurrentContext or currentContext
