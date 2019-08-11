@@ -25,7 +25,7 @@ class SingleSubViewPresentVC: UIViewController {
 //MARK:- VBProtocol
 extension SingleSubViewPresentVC: VBProtocol {
     
-    var multipleViews: [UIView] {
+    var animatedViews: [UIView] {
         return [centerView]
     }
 }

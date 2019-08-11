@@ -26,7 +26,7 @@ class PresentOverCurrentVC: UIViewController {
 //MARK:- VBProtocol
 extension PresentOverCurrentVC: VBProtocol {
     
-    var multipleViews: [UIView] {
+    var animatedViews: [UIView] {
         return [topView,centerView,bottomView]
     }
 }

@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 @objc public protocol VBProtocol {
-    @objc optional var multipleViews : [UIView] { get }
+    @objc optional var animatedViews : [UIView] { get }
 }
 
 

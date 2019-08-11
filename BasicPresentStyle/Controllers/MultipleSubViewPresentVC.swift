@@ -26,7 +26,7 @@ class MultipleSubViewPresentVC: UIViewController {
 //MARK:- VBProtocol
 extension MultipleSubViewPresentVC: VBProtocol {
     
-    var multipleViews: [UIView] {
+    var animatedViews: [UIView] {
         return [topView,centerView,bottomView]
     }
 }

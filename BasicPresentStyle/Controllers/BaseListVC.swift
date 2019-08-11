@@ -16,7 +16,7 @@ class BaseListVC: UIViewController {
     //MARK:- Action Methods
     @IBAction func btnProgramaticallyCLicked(_ sender: Any) {
         guard let obj : PresentOverCurrentVC = self.storyboard?.instantiateViewController(withIdentifier: "PresentOverCurrentVC") as? PresentOverCurrentVC else { return }
-        // obj.transitioningDelegate = animator
+        obj.transitioningDelegate = animator
         obj.modalTransitionStyle = .crossDissolve
         obj.modalPresentationStyle = .overFullScreen //use full screen insted of overCurrentContext
         self.present(obj, animated: true, completion: nil)
