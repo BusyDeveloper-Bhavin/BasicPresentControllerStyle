@@ -33,7 +33,7 @@ class BaseListVC: UIViewController {
     
     //MARK:- Segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // segue.destination.transitioningDelegate = animator
+         segue.destination.transitioningDelegate = animator
     }
 }
 

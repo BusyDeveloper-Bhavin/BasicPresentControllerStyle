@@ -51,7 +51,7 @@ extension VBAnimator : UIViewControllerTransitioningDelegate {
         
         toVC = presented
         
-        if let vwAnimates = self.toVC?.vbProtocol?.multipleViews {
+        if let vwAnimates = self.toVC?.vbProtocol?.animatedViews {
             self.animatedViews = vwAnimates
         }
         
