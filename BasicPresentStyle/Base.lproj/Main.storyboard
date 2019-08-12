@@ -19,10 +19,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="7KU-8h-0Or">
-                                <rect key="frame" x="90" y="252.5" width="195" height="162"/>
+                                <rect key="frame" x="65.5" y="220.5" width="244" height="226"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FNf-Rl-ndL">
-                                        <rect key="frame" x="0.0" y="0.0" width="195" height="34"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="244" height="34"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                         <state key="normal" title="SIngle View Present">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -32,7 +32,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhq-5b-rjA">
-                                        <rect key="frame" x="0.0" y="64" width="195" height="34"/>
+                                        <rect key="frame" x="0.0" y="64" width="244" height="34"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                         <state key="normal" title="Mutiple View Present">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -42,13 +42,23 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMt-WD-IUy">
-                                        <rect key="frame" x="0.0" y="128" width="195" height="34"/>
+                                        <rect key="frame" x="0.0" y="128" width="244" height="34"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                         <state key="normal" title="PresentOverCurrentVC">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="btnProgramaticallyCLicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8gQ-W3-7tK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wsx-Yy-g0K">
+                                        <rect key="frame" x="0.0" y="192" width="244" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <state key="normal" title="Change KeyFrame Animation">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="pMW-NF-c3M" kind="presentation" id="a9J-Yy-wnf"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -281,6 +291,97 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cFB-OY-PRx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2199" y="134"/>
+        </scene>
+        <!--Check Key Frame AnimationVC-->
+        <scene sceneID="8qv-Wf-fdx">
+            <objects>
+                <viewController storyboardIdentifier="CheckKeyFrameAnimationVC" modalTransitionStyle="crossDissolve" id="pMW-NF-c3M" customClass="CheckKeyFrameAnimationVC" customModule="BasicPresentStyle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X8H-Do-J3E">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="NSC-Ke-ya0">
+                                <rect key="frame" x="20" y="95.5" width="335" height="461.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aGX-7m-3sd">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="49"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pRw-hK-wwz">
+                                        <rect key="frame" x="0.0" y="69" width="335" height="48.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8a8-x5-Qg3">
+                                        <rect key="frame" x="0.0" y="137.5" width="335" height="49"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="USb-gx-Qdq">
+                                        <rect key="frame" x="0.0" y="206.5" width="335" height="48.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6DV-P4-xzF">
+                                        <rect key="frame" x="0.0" y="275" width="335" height="49"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eDe-Oe-cTI">
+                                        <rect key="frame" x="0.0" y="344" width="335" height="48.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ryr-N2-PDx">
+                                        <rect key="frame" x="0.0" y="412.5" width="335" height="49"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="751" verticalCompressionResistancePriority="751" text="Mutilple SubView will present " textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FUS-Ez-icu">
+                                <rect key="frame" x="20" y="50" width="335" height="25.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cv1-2M-bER">
+                                <rect key="frame" x="20" y="577" width="95" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                <size key="titleShadowOffset" width="0.0" height="2"/>
+                                <state key="normal" title="Dismiss">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismiss" destination="Q4B-y4-Iq1" eventType="touchUpInside" id="bAx-61-8Dd"/>
+                                    <action selector="dismiss" destination="851-zM-Dhi" eventType="touchUpInside" id="p0B-aM-CcW"/>
+                                    <action selector="dismiss" destination="pMW-NF-c3M" eventType="touchUpInside" id="she-wM-h6T"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NSC-Ke-ya0" firstAttribute="top" secondItem="FUS-Ez-icu" secondAttribute="bottom" constant="20" id="0mr-Nn-hsb"/>
+                            <constraint firstItem="cv1-2M-bER" firstAttribute="leading" secondItem="NSC-Ke-ya0" secondAttribute="leading" id="Eyi-Sz-C0u"/>
+                            <constraint firstItem="oUr-xP-tbt" firstAttribute="bottom" secondItem="cv1-2M-bER" secondAttribute="bottom" constant="50" id="QPv-aO-GJo"/>
+                            <constraint firstItem="cv1-2M-bER" firstAttribute="top" secondItem="NSC-Ke-ya0" secondAttribute="bottom" constant="20" id="QUa-6k-ccu"/>
+                            <constraint firstItem="oUr-xP-tbt" firstAttribute="trailing" secondItem="NSC-Ke-ya0" secondAttribute="trailing" constant="20" id="SN0-8j-2rX"/>
+                            <constraint firstItem="FUS-Ez-icu" firstAttribute="top" secondItem="oUr-xP-tbt" secondAttribute="top" constant="30" id="ZpS-OM-qU7"/>
+                            <constraint firstItem="oUr-xP-tbt" firstAttribute="trailing" secondItem="FUS-Ez-icu" secondAttribute="trailing" constant="20" id="vGo-VG-bdb"/>
+                            <constraint firstItem="FUS-Ez-icu" firstAttribute="leading" secondItem="oUr-xP-tbt" secondAttribute="leading" constant="20" id="xPk-pE-0R2"/>
+                            <constraint firstItem="NSC-Ke-ya0" firstAttribute="leading" secondItem="oUr-xP-tbt" secondAttribute="leading" constant="20" id="xcX-Td-e97"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oUr-xP-tbt"/>
+                    </view>
+                    <connections>
+                        <outletCollection property="vwAnimates" destination="aGX-7m-3sd" collectionClass="NSMutableArray" id="aro-3W-sCH"/>
+                        <outletCollection property="vwAnimates" destination="pRw-hK-wwz" collectionClass="NSMutableArray" id="xhS-o9-cJj"/>
+                        <outletCollection property="vwAnimates" destination="8a8-x5-Qg3" collectionClass="NSMutableArray" id="R69-oU-Sh9"/>
+                        <outletCollection property="vwAnimates" destination="USb-gx-Qdq" collectionClass="NSMutableArray" id="XM7-73-maN"/>
+                        <outletCollection property="vwAnimates" destination="6DV-P4-xzF" collectionClass="NSMutableArray" id="d1q-8V-FxE"/>
+                        <outletCollection property="vwAnimates" destination="eDe-Oe-cTI" collectionClass="NSMutableArray" id="YYa-Bp-D37"/>
+                        <outletCollection property="vwAnimates" destination="ryr-N2-PDx" collectionClass="NSMutableArray" id="WD2-VK-GPN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lsy-cX-BTX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3016.8000000000002" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>

@@ -19,6 +19,7 @@
 		F123B97F2300519300EC1F8C /* MultipleSubViewPresentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F123B97E2300519300EC1F8C /* MultipleSubViewPresentVC.swift */; };
 		F123B9812300547300EC1F8C /* UIViewController+Exntension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F123B9802300547300EC1F8C /* UIViewController+Exntension.swift */; };
 		F123B9832300555900EC1F8C /* PresentOverCurrentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F123B9822300555900EC1F8C /* PresentOverCurrentVC.swift */; };
+		F136EC982301D85300EAEC8E /* CheckKeyFrameAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F136EC972301D85300EAEC8E /* CheckKeyFrameAnimationVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		F123B97E2300519300EC1F8C /* MultipleSubViewPresentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleSubViewPresentVC.swift; sourceTree = "<group>"; };
 		F123B9802300547300EC1F8C /* UIViewController+Exntension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Exntension.swift"; sourceTree = "<group>"; };
 		F123B9822300555900EC1F8C /* PresentOverCurrentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentOverCurrentVC.swift; sourceTree = "<group>"; };
+		F136EC972301D85300EAEC8E /* CheckKeyFrameAnimationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckKeyFrameAnimationVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				F123B97E2300519300EC1F8C /* MultipleSubViewPresentVC.swift */,
 				F123B9822300555900EC1F8C /* PresentOverCurrentVC.swift */,
 				F123B9802300547300EC1F8C /* UIViewController+Exntension.swift */,
+				F136EC972301D85300EAEC8E /* CheckKeyFrameAnimationVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 				F123B9812300547300EC1F8C /* UIViewController+Exntension.swift in Sources */,
 				F123B97B23004E7E00EC1F8C /* BaseListVC.swift in Sources */,
 				F123B97D23004F4100EC1F8C /* SingleSubViewPresentVC.swift in Sources */,
+				F136EC982301D85300EAEC8E /* CheckKeyFrameAnimationVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

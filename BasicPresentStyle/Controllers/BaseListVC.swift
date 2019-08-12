@@ -18,6 +18,7 @@ class BaseListVC: UIViewController {
         
         guard let vc : PresentOverCurrentVC = self.storyboard?.instantiateViewController(withIdentifier: "PresentOverCurrentVC") as? PresentOverCurrentVC else { return }
         let obj = UINavigationController(rootViewController: vc)
+        animator.animationOptions = [.calculationModeCubicPaced]
         obj.transitioningDelegate = animator
         obj.modalTransitionStyle = .crossDissolve
         obj.modalPresentationStyle = .overFullScreen //use full screen insted of overCurrentContext
@@ -35,7 +36,11 @@ class BaseListVC: UIViewController {
     
     //MARK:- Segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-         segue.destination.transitioningDelegate = animator
+        segue.destination.transitioningDelegate = animator
+        animator.animationOptions = [.calculationModeLinear]
+        if segue.destination is CheckKeyFrameAnimationVC {
+            animator.animationOptions = [.calculationModePaced]
+        }
     }
 }
 
