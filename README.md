@@ -36,3 +36,9 @@ How it looks like without animation and with animation
         }
     
     Note: obj.modalPresentationStyle = .overFullScreen //Use full screen insted of overCurrentContext or currentContext
+
+# You can change keyframe animation options as well
+
+    for ex. 
+        var animator : VBAnimator = VBAnimator()
+        animator.animationOptions = [.calculationModeCubicPaced]
