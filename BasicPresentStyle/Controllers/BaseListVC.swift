@@ -12,6 +12,7 @@ class BaseListVC: UIViewController {
     
     //MARK:- Variables
     var animator : VBAnimator = VBAnimator()
+//    var animator : VBAnimator = VBAnimator(direction: .bottomTotop) // Example with direction
     
     //MARK:- Action Methods
     @IBAction func btnProgramaticallyCLicked(_ sender: Any) {
@@ -37,6 +38,7 @@ class BaseListVC: UIViewController {
     //MARK:- Segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         segue.destination.transitioningDelegate = animator
+        segue.destination.modalPresentationStyle = .overFullScreen
         animator.animationOptions = [.calculationModeLinear]
         if segue.destination is CheckKeyFrameAnimationVC {
             animator.animationOptions = [.calculationModePaced]

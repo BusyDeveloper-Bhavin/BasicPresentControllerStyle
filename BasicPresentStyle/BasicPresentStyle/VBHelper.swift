@@ -34,3 +34,18 @@ extension UIViewController {
     }
   
 }
+
+//MARK:- Screen Size
+struct Screen {
+    static let height = UIScreen.main.bounds.height
+    static let width = UIScreen.main.bounds.width
+}
+
+//MARK:-Animation Direction
+
+enum VBDirection {
+    case topTobottom
+    case topTotop
+    case bottomTotop
+    case bottomTobottom
+}

@@ -8,7 +8,7 @@
 
 import UIKit
 
- class VBAnimator: NSObject {
+class VBAnimator: NSObject {
     
     //MARK:- Variables
     
@@ -20,15 +20,23 @@ import UIKit
     
     var animationOptions : UIView.KeyframeAnimationOptions = [.calculationModeLinear]
     
+    var animationDuration = 0.7
+    
+    private var animationDirection: VBDirection = .topTobottom
+    
     //MARK:- Intilize
     override init() {
         
+    }
+    
+    init(direction: VBDirection) {
+        self.animationDirection = direction
     }
 
     //MARK:- Custom Methods
     @objc func showAnimatedViews() {
         
-        let totalAnimationDuration : Double = animatedViews.count == 1 ? 0.7 : 1.0
+        let totalAnimationDuration : Double = animatedViews.count == 1 ? animationDuration : 1.0
         
         let animationDuration : Double = totalAnimationDuration / Double(animatedViews.count)
         
@@ -38,7 +46,14 @@ import UIKit
                 
                 let y = detail.element.frame.origin.y
                 
-                detail.element.frame.origin.y = self.toVC!.view.frame.maxY  + 100
+                switch self.animationDirection {
+                case .bottomTotop, .bottomTobottom:
+                    detail.element.frame.origin.y = Screen.height 
+                    break
+                case .topTobottom, .topTotop:
+                    detail.element.frame.origin.y = -detail.element.frame.maxY / 2.0
+                    break
+                }
                 
                 UIView.addKeyframe(withRelativeStartTime: Double(detail.offset) * animationDuration, relativeDuration: animationDuration, animations: {
                     detail.element.alpha = 1.0
@@ -74,8 +89,49 @@ extension VBAnimator : UIViewControllerTransitioningDelegate {
     
     func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         
-        return nil
+        return DismissHelper.init(animatedViews: self.animatedViews, direction: self.animationDirection)
     }
+    
+    
 }
 
+//MARK:- DismissAnimator
+fileprivate class DismissHelper: NSObject, UIViewControllerAnimatedTransitioning {
+    
+    //MARK:- Variables
+    private var animatedViews : [UIView] = []
+    private var animationDirection: VBDirection = .topTobottom
+    
+    var animationOptions : UIView.KeyframeAnimationOptions = [.calculationModeLinear]
+    
+    //MARK:- init
+    init(animatedViews: [UIView], direction: VBDirection) {
+        self.animatedViews = animatedViews
+        animationDirection = direction
+    }
+    
+    //MARK:- UIViewControllerAnimatedTransitioning Method
+    func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
+        return 1.0
+    }
+    
+    func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
+        
+        UIView.animate(withDuration: 1.0) {
+            self.animatedViews.enumerated().forEach({ (detail) in
+                switch self.animationDirection {
+                case .topTobottom, .bottomTobottom:
+                    detail.element.frame.origin.y = Screen.height
+                    break
+                case .bottomTotop, .topTotop:
+                    detail.element.frame.origin.y = -Screen.height - detail.element.frame.height
+                    break
+                }
+                
+            })
+        }completion: { (_) in
+            transitionContext.completeTransition(true)
+        }
 
+    }
+}
